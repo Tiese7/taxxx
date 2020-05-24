@@ -41,19 +41,13 @@ namespace เย็ดแม่1
 		private void button3_Click(object sender, EventArgs e)
 		{
 			this.Hide();
-			Form3 mainform = new Form3();
+			Form6 mainform = new Form6();
 			mainform.Show();
 		}
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			int a = int.Parse(textBox1.Text); //เงินเดือน
-			int b = int.Parse(textBox2.Text); //โบนัส
-			int c = int.Parse(textBox3.Text); //รายได้อื่นๆ
-			int x, outcome;
-			x = a * 12; //เงินเดือนคูณ 12
-			outcome = x + c + b;
-			textBox4.Text = outcome.ToString();
+			
 		}
 
 		private void button2_Click(object sender, EventArgs e)
@@ -113,7 +107,15 @@ namespace เย็ดแม่1
 			{
 				f = (0);
 			}
-			textBox7.Text = f.ToString();
+			
+		}
+
+		private void button1_Click_1(object sender, EventArgs e)
+		{
+			Form8 prix = new Form8();
+			prix.textBox1.Text = textBox6.Text;
+			prix.Show();
+			this.Hide();
 		}
 	}
 }

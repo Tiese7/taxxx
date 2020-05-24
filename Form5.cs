@@ -20,13 +20,7 @@ namespace เย็ดแม่1
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			int a = int.Parse(textBox1.Text); //เงินเดือน
-			int b = int.Parse(textBox2.Text); //โบนัส
-			int c = int.Parse(textBox3.Text); //รายได้อื่นๆ
-			int x, outcome;
-			x = a * 12; //เงินเดือนคูณ 12
-			outcome = x + c + b;
-			textBox4.Text = outcome.ToString();
+			
 		}
 
 		private void button2_Click(object sender, EventArgs e)
@@ -76,7 +70,7 @@ namespace เย็ดแม่1
             {
                 f = (0);
             }
-            textBox10.Text = f.ToString();
+            
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -157,7 +151,7 @@ namespace เย็ดแม่1
                 {
                     f = (0);
                 }
-                textBox11.Text = f.ToString();
+                
             }
             else if (hpri < 5000001)
             {
@@ -199,7 +193,7 @@ namespace เย็ดแม่1
                 {
                     f = (0);
                 }
-                textBox11.Text = f.ToString();
+                
 
             }
             
@@ -208,8 +202,24 @@ namespace เย็ดแม่1
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 mainform = new Form3();
+            Form1 mainform = new Form1();
             mainform.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form6 prix = new Form6();
+            prix.textBox4.Text = textBox9.Text;
+            prix.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form6 prix = new Form6();
+            prix.textBox4.Text = textBox12.Text;
+            prix.Show();
+            this.Hide();
         }
     }
 }

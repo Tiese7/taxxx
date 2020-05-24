@@ -39,13 +39,7 @@ namespace เย็ดแม่1
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			int a = int.Parse(textBox1.Text);
-			int b = int.Parse(textBox2.Text);
-			int c = int.Parse(textBox3.Text);
-			int x, outcome;
-			x = a * 12;
-			outcome = x + c + b;
-			textBox4.Text = outcome.ToString();
+			
 		}
 
 		private void button3_Click(object sender, EventArgs e)
@@ -129,7 +123,7 @@ namespace เย็ดแม่1
 			{
 				f = (0);
 			}
-			textBox7.Text = f.ToString();
+			
 		}
 
 		private void radioButton4_CheckedChanged(object sender, EventArgs e)
@@ -163,6 +157,25 @@ namespace เย็ดแม่1
 				c2 = 0;
 				c3 = 0;
 			}
+		}
+
+		private void textBox4_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Form4_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button1_Click_1(object sender, EventArgs e)
+		{
+			Form1 prix = new Form1();
+			prix.textBox4.Text = textBox5.Text;
+			prix.Show();
+			this.Hide();
+
 		}
 	}
 }

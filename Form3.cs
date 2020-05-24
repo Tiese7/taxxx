@@ -56,5 +56,25 @@ namespace เย็ดแม่1
 			Form7 group5 = new Form7();
 			group5.Show();
 		}
+
+		private void button6_Click(object sender, EventArgs e)
+		{
+			int a = int.Parse(textBox1.Text);
+			int b = int.Parse(textBox2.Text);
+			int c = int.Parse(textBox3.Text);
+			int x, outcome;
+			x = a * 12;
+			outcome = x + c + b;
+			textBox4.Text = outcome.ToString();
+
+		}
+
+		private void button7_Click(object sender, EventArgs e)
+		{
+			Form4 prix = new Form4();
+			prix.textBox4.Text = textBox4.Text;
+			prix.Show();
+			this.Hide();
+		}
 	}
 }
