@@ -47,54 +47,23 @@ namespace เย็ดแม่1
 			textBox12.Text = eg.ToString();
 			textBox13.Text = f.ToString();
 			textBox14.Text = g.ToString();
-			int o, pov,jav = 0, xy, fx;
+			int o, pov,jac = 0, xy;
 			o = (tpri * 10) / 100;
 			pov = a1 + b1 + c1 + d1 + eg + f + g;
 			if (pov > o)
 			{
-				jav = o;
-				textBox5.Text = jav.ToString();
+				jac = o;
+				textBox5.Text = jac.ToString();
 			}
 			else
 			{
-				jav = pov;
-				textBox5.Text = jav.ToString();
+				jac = pov;
+				textBox5.Text = jac.ToString();
 			}
-			xy = tpri - jav;
+			xy = tpri - jac;
 			textBox6.Text = xy.ToString();
 
-			if (xy > 5000001)
-			{
-				fx = (xy * 35 / 100);
-			}
-			else if (xy > 2000001)
-			{
-				fx = (xy * 30 / 100);
-			}
-			else if (xy > 1000001)
-			{
-				fx = (xy * 25 / 100);
-			}
-			else if (xy > 750001)
-			{
-				fx = (xy * 20 / 100);
-			}
-			else if (xy > 500001)
-			{
-				fx = (xy * 15 / 100);
-			}
-			else if (xy > 300001)
-			{
-				fx = (xy * 10 / 100);
-			}
-			else if (xy > 150001)
-			{
-				fx = (xy * 5 / 100);
-			}
-			else
-			{
-				fx = (0);
-			}
+			
 			
 		}
 

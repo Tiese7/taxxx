@@ -217,45 +217,7 @@ namespace เย็ดแม่1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int o = int.Parse(textBox4.Text);
-            int p = int.Parse(textBox12.Text);
-// int hum = int.Parse(textBox13.Text);
-            int x, f;
-            x = o - p;
-
-            if (x > 5000001)
-            {
-                f = (x * 35 / 100);
-            }
-            else if (x > 2000001)
-            {
-                f = (x * 30 / 100);
-            }
-            else if (x > 1000001)
-            {
-                f = (x * 25 / 100);
-            }
-            else if (x > 750001)
-            {
-                f = (x * 20 / 100);
-            }
-            else if (x > 500001)
-            {
-                f = (x * 15 / 100);
-            }
-            else if (x > 300001)
-            {
-                f = (x * 10 / 100);
-            }
-            else if (x > 150001)
-            {
-                f = (x * 5 / 100);
-            }
-            else
-            {
-                f = (0);
-            }
-            
+           
         }
 
         private void hee2_Click(object sender, EventArgs e)
@@ -269,16 +231,7 @@ namespace เย็ดแม่1
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if(radioButton1.Checked)
-            {
-                numericUpDown2.Enabled = false;
-                checkBox2.Enabled = false;
-            }
-            else
-            {
-                numericUpDown2.Enabled = true;
-                checkBox2.Enabled = true;
-            }
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
